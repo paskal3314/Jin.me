@@ -1,0 +1,11 @@
+.section-title {
+    font-size: 4.0rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.section-title-blue {
+    color: var(--blue);
+}

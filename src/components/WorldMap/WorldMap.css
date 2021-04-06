@@ -1,0 +1,65 @@
+
+.worldmap-wrapper {
+    min-height: 80vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: var(--blue);
+    font-weight: 400;
+    margin: auto;
+    padding-top: 2rem;
+}
+.worldmap-wrapper-sm {
+    min-height: 30vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background: var(--blue);
+    font-weight: 400;
+    margin: auto;
+}
+
+.worldmap-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60vh;
+}
+.worldmap-container-sm {
+    display: flex;
+    justify-content: space-evenly;
+    height: 20vh;
+}
+
+.country-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    border-radius: 5rem 0 5rem 0;
+    cursor: pointer;
+    text-decoration: none;
+    transition:all 0.9s, color 0.3s;
+}
+.country-container:hover{
+    text-decoration: none;
+    box-shadow: 3rem 3rem 0.1rem 0 rgba(84,160,255,0.95) inset,
+                -3rem -3rem 0.1rem 0 rgba(84,160,255,0.95) inset;
+}
+
+.country-container:hover .country-name{
+    font-size: 3.4rem;
+}
+
+.country-container img {
+    width: 60%;
+}
+
+.country-name {
+    font-size: 3rem;
+    transition: all 0.9s;
+}

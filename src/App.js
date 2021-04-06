@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import Hero from './components/Hero/Hero';
+import WorldMap from './components/WorldMap/WorldMap';
+import About from './components/About/About';
 import './App.css';
 
 function App() {
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  
+  useEffect(() => {
+      if (window.innerWidth > 769) {
+        setIsDesktop(true);
+        setIsMobile(false);
+      } else {
+        setIsMobile(true);
+        setIsDesktop(false);
+      }
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>  
+      <Hero isDesktop={isDesktop} />
+      <About isDesktop={isDesktop}/>
+      <WorldMap isDesktop={isDesktop}/>
+      <div className="jumbotron" id="korea"/>
+      <div className="jumbotron" id="canada"/>
     </div>
   );
 }
