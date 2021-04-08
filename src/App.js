@@ -6,6 +6,7 @@ import Projects from './components/Projects/Projects';
 import './App.css';
 
 function App() {
+  //test
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [bgCountry, setBgCountry] = useState("");
