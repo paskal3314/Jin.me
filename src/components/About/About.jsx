@@ -12,14 +12,14 @@ const About = ({isDesktop}) => {
             <Container>
                 <Title title="About Me" color="blue" />
                 <Row className={isDesktop ? "about-wrapper" : "about-wrapper-sm"}>
-                <Col md={6} sm={12}>
+                <Col lg={6} sm={12}>
                     <Fade bottom duration={1000} delay={600} distance="30px">
                     <div className="about-wrapper__image">
                         <AboutImg alt="profile picture" filename="images/profile.jpg" />
                     </div>
                     </Fade>
                 </Col>
-                <Col md={6} sm={12}>
+                <Col lg={6} sm={12}>
                     <Fade left={isDesktop} bottom={!isDesktop} duration={1000} delay={1000} distance="30px">
                     <div className="about-wrapper__info">
                         <p className={isDesktop ? "about-wrapper__info-text" : "about-wrapper__info-text-sm"}>

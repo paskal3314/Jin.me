@@ -21,15 +21,36 @@ function App() {
     setProjects([...projectsData ]);
     setExperience([...experienceData ]);
   }, []);
-  
+
+  // useEffect(() => {
+  //   if (window.innerWidth > 769) {
+  //     setIsDesktop(true);
+  //     setIsMobile(false);
+  //   } else {
+  //     setIsMobile(true);
+  //     setIsDesktop(false);
+  //   }
+  // }, []);
+
   useEffect(() => {
-      if (window.innerWidth > 769) {
+    const updateWindowDimensions = () => {
+      if (window.innerWidth > 1000) { //769
         setIsDesktop(true);
         setIsMobile(false);
+        console.log("width: desktop");
       } else {
         setIsMobile(true);
         setIsDesktop(false);
+        console.log("width: mobile");
       }
+    };
+
+    updateWindowDimensions();
+
+    window.addEventListener("resize", updateWindowDimensions);
+
+    return () => window.removeEventListener("resize", updateWindowDimensions) 
+
   }, []);
 
   return (
@@ -37,7 +58,7 @@ function App() {
       <Hero isDesktop={isDesktop} />
       <About isDesktop={isDesktop} />
       <WorldMap isDesktop={isDesktop} onSelect={setBgCountry} />
-      <Projects isDesktop={isDesktop} bgCountry={bgCountry} />
+      <Projects isDesktop={isDesktop} bgCountry={bgCountry}  />
       <Experience isDesktop={isDesktop} bgCountry={bgCountry} />
       <Footer />
     </PortfolioProvider>

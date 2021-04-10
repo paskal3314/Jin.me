@@ -21,14 +21,14 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FontAwesomeIcon icon={faGithub} />
+                        <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                     <a
                         href="https://github.com/paskal3314"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FontAwesomeIcon icon={faLinkedin} />
+                        <FontAwesomeIcon icon={faGithub} />
                     </a>
                 </div>
                 <hr />

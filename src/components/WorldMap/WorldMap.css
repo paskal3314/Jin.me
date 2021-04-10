@@ -1,14 +1,13 @@
 
 .worldmap-wrapper {
-    min-height: 80vh;
     height: fit-content;
     display: flex;
     flex-direction: column;
     text-align: center;
     background: var(--blue);
-    font-weight: 400;
-    margin: auto;
-    padding-top: 2rem;
+    /* font-weight: 400; */
+    /* margin: auto; */
+    padding-bottom: 2rem;
 }
 .worldmap-wrapper-sm {
     min-height: 30vh;
@@ -18,19 +17,19 @@
     text-align: center;
     justify-content: center;
     background: var(--blue);
-    font-weight: 400;
-    margin: auto;
+    /* font-weight: 400; */
+    /* margin: auto; */
+    padding-bottom: 2rem;
 }
 
 .worldmap-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    height: 60vh;
 }
 .worldmap-container-sm {
     display: flex;
     justify-content: space-evenly;
-    height: 20vh;
 }
 
 .country-container {
@@ -41,6 +40,7 @@
     justify-content: center;
     width: 35%;
     border-radius: 5rem 0 5rem 0;
+    padding: 3rem;
     cursor: pointer;
     text-decoration: none;
     transition:all 0.9s, color 0.3s;
