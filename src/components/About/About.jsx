@@ -23,16 +23,16 @@ const About = ({isDesktop}) => {
                     <Fade left={isDesktop} bottom={!isDesktop} duration={1000} delay={1000} distance="30px">
                     <div className="about-wrapper__info">
                         <p className={isDesktop ? "about-wrapper__info-text" : "about-wrapper__info-text-sm"}>
-                        {`I was just a common student, liked playing video games and small interest in Computer when I was 18.`}
+                        {`I was just a common high school student, I liked playing video games and had a general interest in Computer Science.`}
                         </p>
                         <p className={isDesktop ? "about-wrapper__info-text" : "about-wrapper__info-text-sm"}>
-                        {'Since I started studying IT technologies especially programming, my goal of what I will be has totally changed.'}
+                        {'Since I started studying IT in the University, I was especially into programming. Then my goal of what I want to be has completely changed.'}
                         </p>
                         <p className={isDesktop ? "about-wrapper__info-text" : "about-wrapper__info-text-sm"}>
-                        {'Experienced 2-years professional development job as a firmware developer in my origin country, then I made an important but bold decision to study more at SAIT, Canada.'}
+                        {'After graduation, I experienced two years’ development job as a firmware developer in my home country of South Korea. Then in 2018 I made an important but bold decision to fully immerse myself into the study of programming at SAIT in Calgary, Canada.'}
                         </p>
                         <p className={isDesktop ? "about-wrapper__info-text" : "about-wrapper__info-text-sm"}>
-                        {`Now, I'm at the most important crossroads for the start of Canada life as an international student, looking for an employer to be with.`}
+                        {`Now, I'm at an important crossroads in my life. My time as an international student is coming to an end and I’m actively searching for a company that will fit my newly enhanced skills.`}
                         </p>
                         
                         <a

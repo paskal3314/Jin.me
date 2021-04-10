@@ -8,6 +8,10 @@ import './Projects.css';
 
 const Projects = ({ isDesktop, bgCountry }) => {
     const { projects } = useContext(PortfolioContext);
+    
+    if(bgCountry.length === 0){
+        return null;
+    }
 
     return (
         <section id="projects">
@@ -16,8 +20,12 @@ const Projects = ({ isDesktop, bgCountry }) => {
                     <Title title={"Projects in " + bgCountry} color="blue"/>
 
                     {projects.map( (project) => {
-                        const {title, info, info2, url, repo, img, id} = project;
+                        const {title, info, info2, url, repo, img, country, id} = project;
                         
+                        if(bgCountry !== "the world" && country !== bgCountry){
+                            return null;
+                        }
+
                         return(
                             <Row className="project-wrapper__row" key={id}>
                                 <Col lg={4} sm={12}>
