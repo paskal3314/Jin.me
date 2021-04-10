@@ -15,7 +15,7 @@ const Header = ({isDesktop}) => {
                         Hi, my name is{' '}
                         <span className="text-color-main">Jinseok Lee</span>
                         <br/>
-                        I'm looking for Jr. Full-stack / Software developer job.
+                        I'm looking for Jr. Full-stack developer job.
                     </h1>
                 </Fade>
                 <Fade left={isDesktop} bottom={!isDesktop} duration={1000} delay={1000} distance="50px">

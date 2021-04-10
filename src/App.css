@@ -17,10 +17,6 @@ body {
     text-align: center;
 }
 
-section {
-    padding: 2rem 0rem;
-}
-
 .cta-btn{
     display: inline-block;
     position: relative;
