@@ -47,7 +47,7 @@ const Projects = ({ isDesktop, bgCountry }) => {
                                                 className="cta-btn cta-btn--project"
                                                 href={url || '#!'}
                                             >
-                                                See Live
+                                                {country !== 'korea' ? "See Live" : "Product Link"}
                                             </a>
 
                                             {repo && (

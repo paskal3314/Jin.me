@@ -34,14 +34,12 @@ function App() {
 
   useEffect(() => {
     const updateWindowDimensions = () => {
-      if (window.innerWidth > 1000) { //769
+      if (window.innerWidth > 950) { //769
         setIsDesktop(true);
         setIsMobile(false);
-        console.log("width: desktop");
       } else {
         setIsMobile(true);
         setIsDesktop(false);
-        console.log("width: mobile");
       }
     };
 
