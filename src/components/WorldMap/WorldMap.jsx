@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Container, Row } from 'react-bootstrap';
+import React from 'react';
+import { Row } from 'react-bootstrap';
 import Title from '../Title/Title';
 import { Link } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
