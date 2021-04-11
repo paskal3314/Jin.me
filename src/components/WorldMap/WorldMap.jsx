@@ -14,13 +14,13 @@ const WorldMap = ({isDesktop, onSelect}) => {
                 <Title title="Choose interesting background" />
                 <Fade bottom duration={1000} delay={1000} distance="0px">
                     <Row className={isDesktop ? "worldmap-container" : "worldmap-container-sm"}>
-                            <Link to="projects" smooth duration={1000} className="country-container" onClick={() => onSelect("korea")}>
-                                    <img alt="korea map" src="images/korea.png"/>
-                                    <span className="country-name">KOREA</span>
-                            </Link>
                             <Link to="projects" smooth duration={1000} className="country-container" onClick={() => onSelect("canada")}>
                                     <img alt="korea map" src="images/canada.png"/>
                                     <span className="country-name">CANADA</span>
+                            </Link>
+                            <Link to="projects" smooth duration={1000} className="country-container" onClick={() => onSelect("korea")}>
+                                    <img alt="korea map" src="images/korea.png"/>
+                                    <span className="country-name">KOREA</span>
                             </Link>
                     </Row>
                 </Fade>

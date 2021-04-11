@@ -22,16 +22,6 @@ function App() {
     setExperience([...experienceData ]);
   }, []);
 
-  // useEffect(() => {
-  //   if (window.innerWidth > 769) {
-  //     setIsDesktop(true);
-  //     setIsMobile(false);
-  //   } else {
-  //     setIsMobile(true);
-  //     setIsDesktop(false);
-  //   }
-  // }, []);
-
   useEffect(() => {
     const updateWindowDimensions = () => {
       if (window.innerWidth > 950) { //769

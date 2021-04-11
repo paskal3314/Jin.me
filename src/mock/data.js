@@ -18,7 +18,7 @@ export const projectsData = [
         title: 'My Own Portfolio Website',
         info: 'The responsive website you are looking at right now, introducing my backgrounds depending on the country selected by user.',
         info2: 'React, JavaScript, CSS',
-        url: '',
+        url: 'https://jin-me.herokuapp.com/',
         repo: 'https://github.com/paskal3314/Jin.me',
     },
     {
