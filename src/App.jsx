@@ -11,11 +11,12 @@ import { PortfolioProvider } from './context/context';
 import { projectsData, experienceData } from './mock/data';
 
 function App() {
-  const [projects, setProjects] = useState([]);
-  const [experience, setExperience] = useState([]);
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [bgCountry, setBgCountry] = useState("");
+
+  const [projects, setProjects] = useState([]);
+  const [experience, setExperience] = useState([]);
 
   useEffect(() => {
     setProjects([...projectsData ]);
@@ -34,10 +35,10 @@ function App() {
     };
 
     updateWindowDimensions();
-
+    
     window.addEventListener("resize", updateWindowDimensions);
 
-    return () => window.removeEventListener("resize", updateWindowDimensions) 
+    return () => window.removeEventListener("resize", updateWindowDimensions)   //cleanup
 
   }, []);
 

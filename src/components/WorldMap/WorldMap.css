@@ -8,6 +8,7 @@
     /* font-weight: 400; */
     /* margin: auto; */
     padding-bottom: 2rem;
+    min-height: 50vh;
 }
 .worldmap-wrapper-sm {
     min-height: 30vh;
@@ -20,6 +21,7 @@
     /* font-weight: 400; */
     /* margin: auto; */
     padding-bottom: 2rem;
+    min-height: 30vh;
 }
 
 .worldmap-container {

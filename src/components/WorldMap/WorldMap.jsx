@@ -19,7 +19,7 @@ const WorldMap = ({isDesktop, onSelect}) => {
                                     <span className="country-name">CANADA</span>
                             </Link>
                             <Link to="projects" smooth duration={1000} className="country-container" onClick={() => onSelect("korea")}>
-                                    <img alt="korea map" src="images/korea.png"/>
+                                    <img alt="korea map" src="images/korea2.png"/>
                                     <span className="country-name">KOREA</span>
                             </Link>
                     </Row>
