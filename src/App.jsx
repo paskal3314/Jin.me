@@ -25,7 +25,7 @@ function App() {
 
   useEffect(() => {
     const updateWindowDimensions = () => {
-      if (window.innerWidth > 950) { //769
+      if (window.innerWidth > 1000) { //769
         setIsDesktop(true);
         setIsMobile(false);
       } else {
