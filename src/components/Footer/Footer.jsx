@@ -12,7 +12,7 @@ const Footer = () => {
             <Container>
                 <span className="back-to-top">
                     <Link to="hero" smooth duration={1000}>
-                        <FontAwesomeIcon icon={faAngleUp} size="2x"/>
+                        <FontAwesomeIcon icon={faAngleUp} size="2x" className="hoverY"/>
                     </Link>
                 </span>
                 <div className="social-links">
