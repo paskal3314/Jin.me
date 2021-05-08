@@ -11,7 +11,7 @@
 ◼ Single page web application built with React (create-react-app)<br/>
 <br/>
 
-✔Check live version here: <a href="http://jinseoklee.me/"><b>Link</b></a>
+✔Check live version here: <a href="http://jinseoklee.me/" target="_blank"><b>Link</b></a>
 
 <h2>Getting Started</h2>
 Below instructions will help you run this project on your local machine and change code for building your own portfolio website!
@@ -25,13 +25,13 @@ Below instructions will help you run this project on your local machine and chan
   <li>CSS</li>
   <li>NPM</li>
   <li>React and Hooks</li>
-  <li>Referenced <a href="https://github.com/cobidev/gatsby-simplefolio">GatsBy Simplefolio</a></li>
+  <li>Referenced <a href="https://github.com/cobidev/gatsby-simplefolio" target="_blank">GatsBy Simplefolio</a></li>
 </ul>
 
 <h2>Author</h2>
 <ul>
   <li>
-    Jinseok Lee - <a href="https://www.linkedin.com/in/jinseok-lee-aims-high/">LinkedIn</a>, <a href="https://github.com/paskal3314">Github</a>
+    Jinseok Lee - <a href="https://www.linkedin.com/in/jinseok-lee-aims-high/" target="_blank">LinkedIn</a>, <a href="https://github.com/paskal3314" target="_blank">Github</a>
   </li>
 </ul>
 <br/>
