@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
@@ -8,6 +8,8 @@ import './Projects.css';
 
 const Projects = ({ isDesktop, bgCountry }) => {
     const { projects } = useContext(PortfolioContext);
+
+    const [isShown, setIsShown] = useState(false);
     
     if(bgCountry.length === 0){
         return (
@@ -22,7 +24,7 @@ const Projects = ({ isDesktop, bgCountry }) => {
                     <Title title={"Projects in " + bgCountry} color="blue"/>
 
                     {projects.map( (project) => {
-                        const {title, info, info2, url, repo, img, country, id} = project;
+                        const {title, info, info2, url, repo, img, country, id, credential} = project;
                         
                         if(bgCountry !== "the world" && country !== bgCountry){
                             return null;
@@ -41,14 +43,26 @@ const Projects = ({ isDesktop, bgCountry }) => {
                                             <p className="mb-4">{info2 || 'Second information block'}</p>
                                         </div>
                                         <div>
-                                            <a
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="cta-btn cta-btn--project"
-                                                href={url || '#!'}
-                                            >
-                                                {country !== 'korea' ? "See Live" : "Product Link"}
-                                            </a>
+                                            {credential ? 
+                                                (<a
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="cta-btn cta-btn--project"
+                                                    href={url || '#!'}
+                                                    onMouseEnter={() => setIsShown(true)}
+                                                    // onMouseLeave={() => setIsShown(false)}t
+                                                >{country !== 'korea' ? "See Live" : "Product Link"}<br/>
+                                                </a>)
+                                                :
+                                                (<a
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="cta-btn cta-btn--project"
+                                                    href={url || '#!'}
+                                                >{country !== 'korea' ? "See Live" : "Product Link"}<br/>
+                                                </a>)
+                                            }                                         
+                                                
 
                                             {repo && (
                                                 <a
@@ -59,6 +73,18 @@ const Projects = ({ isDesktop, bgCountry }) => {
                                                 >
                                                     Source Code
                                                 </a>
+                                            )}
+
+                                            {credential && isShown && (
+                                                <Fade left={isDesktop} bottom={!isDesktop} duration={500} delay={200} distance="30px">
+                                                <div className="project-wrapper__text credential-info">
+                                                    <label className="project-wrapper__label"><b>Use this account to take a look!</b></label>
+                                                    <p>
+                                                        Username: {credential.username}<br/>
+                                                        Password: {credential.password}<br/>
+                                                    </p>
+                                                </div>
+                                                </Fade>
                                             )}
                                         </div>
                                     </Fade>

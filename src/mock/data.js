@@ -6,9 +6,10 @@ export const projectsData = [
         country: 'canada',
         img: 'images/project_LLSC.png',
         title: 'Student Services Management System [Capstone project]',
-        info: 'System rebuilding capstone project for Lamb Learner Success Center of SAIT, change and migrate database from MS Access to MongoDB including development of new web-based interface system to replace the old GUI interface program. Worked with 4 students as a team.',
+        info: 'System rebuilding capstone project for Lamb Learner Success Center of SAIT, change and migrate database from MS Access to MongoDB including development of new web-based interface system to replace the old GUI interface program.\r\n Worked with 4 students as a team.',
         info2: 'MongoDB, Node.js, JavaScript, PUG, CSS',
-        url: '',
+        credential: {username: '000123456', password: 'password'},
+        url: 'https://llsc-ssms.herokuapp.com/',
         repo: 'https://github.com/paskal3314/LLSCSSMS',
     },
     {
