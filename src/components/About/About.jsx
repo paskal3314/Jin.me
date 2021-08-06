@@ -75,7 +75,7 @@ const About = ({ isDesktop }) => {
                     isDesktop ? "cta-btn--resume" : "cta-btn--resume-sm"
                   }`}
                   href={
-                    "https://mysait-my.sharepoint.com/:b:/g/personal/jinseok_lee_edu_sait_ca/EbiQPPM9lcNHisrCazxQ9lIB6cg0k8ERwojHysHbvIUsQA?e=ICqfYi"
+                    "https://mysait-my.sharepoint.com/:b:/g/personal/jinseok_lee_edu_sait_ca/Ea1dT_cdDBVNlZqiBfZZN38BaJ65fYx4nCK1EbWkgcHbEQ?e=TDJpHr"
                   }
                 >
                   Resume
